@@ -1,5 +1,3 @@
-// src/components/Hero/index.tsx
-
 "use client"; // Add this directive to mark the component as a Client Component
 
 import Link from "next/link";
@@ -58,8 +56,8 @@ const Hero = () => {
                 }}
               >
                 Global leaders in cybercrime investigations and cryptocurrency
-                recovery. Whether it's internet scams or investment fraud, rely
-                on us to reveal the truth and recover your assets.
+                recovery. Whether it&apos;s internet scams or investment fraud,
+                rely on us to reveal the truth and recover your assets.
               </p>
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <Link
@@ -214,42 +212,72 @@ const Hero = () => {
             stroke="url(#paint1_linear_25:218)"
           />
           <path
-            d="M62.8893 72.3303C90.6599 66.4798 158.397 64.9086 207.178 105.427C268.155 156.076 286.59 162.093 321.333 166.607C356.076 171.12 394.718 183.657 419.889 212.24"
+            d="M5.88928 72.3303C33.6599 66.4798 101.397 64.9086 150.178 105.427C211.155 156.076 229.59 162.093 264.333 166.607C299.076 171.12 337.718 183.657 362.889 212.24"
             stroke="url(#paint2_linear_25:218)"
+          />
+          <path
+            d="M22.8893 72.3303C50.6599 66.4798 118.397 64.9086 167.178 105.427C228.155 156.076 246.59 162.093 281.333 166.607C316.076 171.12 354.718 183.657 379.889 212.24"
+            stroke="url(#paint3_linear_25:218)"
+          />
+          <path
+            d="M18.4118 112.024C47.7925 101.317 122.975 91.1183 180.825 136.04C252.778 193.241 276.089 200.075 316.166 205.448C356.242 210.822 401.702 218.929 430.697 252.913"
+            stroke="url(#paint4_linear_25:218)"
           />
           <defs>
             <linearGradient
               id="paint0_linear_25:218"
-              x1="184.389"
-              y1="212.24"
-              x2="184.389"
-              y2="64.4395"
+              x1="5.88867"
+              y1="72.3303"
+              x2="362.889"
+              y2="212.24"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.24" />
+              <stop stopColor="#4A6CF7" />
+              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_25:218"
-              x1="161.389"
-              y1="212.24"
-              x2="161.389"
-              y2="64.4395"
+              x1="22.8887"
+              y1="72.3303"
+              x2="379.889"
+              y2="212.24"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.24" />
+              <stop stopColor="#4A6CF7" />
+              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_25:218"
-              x1="206.389"
-              y1="212.24"
-              x2="206.389"
-              y2="64.4395"
+              x1="5.88867"
+              y1="72.3303"
+              x2="362.889"
+              y2="212.24"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.24" />
+              <stop stopColor="#4A6CF7" />
+              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient
+              id="paint3_linear_25:218"
+              x1="22.8887"
+              y1="72.3303"
+              x2="379.889"
+              y2="212.24"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#4A6CF7" />
+              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient
+              id="paint4_linear_25:218"
+              x1="18.4113"
+              y1="112.024"
+              x2="430.697"
+              y2="252.913"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#4A6CF7" />
+              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
