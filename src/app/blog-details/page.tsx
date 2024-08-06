@@ -1,5 +1,3 @@
-import SharePost from "@/components/Blog/SharePost";
-import TagButton from "@/components/Blog/TagButton";
 import Image from "next/image";
 
 import { Metadata } from "next";
@@ -63,16 +61,16 @@ const BlogDetailsPage = () => {
                     digital heists where hackers pilfer cryptocurrencies like
                     Bitcoin or Ethereum from individuals and prominent
                     cryptocurrency exchanges. A notable instance is the
-                    extensive theft of over $32 million from Japan's Bitpoint
-                    exchange, reminiscent of the substantial $500 million
-                    hacking operation that targeted Coincheck.
+                    extensive theft of over $32 million from Japan&apos;s
+                    Bitpoint exchange, reminiscent of the substantial $500
+                    million hacking operation that targeted Coincheck.
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    {" "}
                     Individuals can fall prey to crypto-fraud by investing in
                     scam currencies. For further insights into cryptocurrency
-                    fraud and Mustang's role in combating these cyber-attacks,
-                    please refer to our Cryptocurrency Scams page.
+                    fraud and Mustang&apos;s role in combating these
+                    cyber-attacks, please refer to our Cryptocurrency Scams
+                    page.
                   </p>
 
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
@@ -114,8 +112,8 @@ const BlogDetailsPage = () => {
                     small groups with little to no industry or IT experience. In
                     recent years regulatory bodies have prosecuted scam ICO
                     perpetrators. In 2019, the US Securities and Exchange
-                    Commission charged the CEO of a software company worth
-                    $42million, for defrauding investors through an ICO.
+                    Commission charged the CEO of a software company worth $42
+                    million, for defrauding investors through an ICO.
                   </p>
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Facebook Scams, Fake News and Bogus Bitcoins
@@ -145,181 +143,44 @@ const BlogDetailsPage = () => {
                   </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     This malware comes as an email attachment that contains a
-                    virus payload, which carries out the malicious action. When
-                    the victim opens the file, their device gets infected.
-                  </p>
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    Ransomware
-                  </h3>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Ransomware installs itself onto a victim’s device and then
-                    encrypts its files, obstructing your access until they pay
-                    the culprit a specified sum of money.
+                    virus payload, which carries out the attack when the email
+                    is opened or the attachment is executed.
                   </p>
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Worms
                   </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Worms replicate from machine to machine with no need for
-                    user interaction. Rather, they exploit a weak link in a
-                    software or operating system’s security to spread on their
-                    own.
+                    Worms replicate themselves within a device or across a
+                    network, spreading and infecting other devices. Unlike
+                    viruses, worms do not require user action to propagate.
                   </p>
-
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    Scareware
-                  </h3>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    These programs instil fear through alarming messages online.
-                    This tactic pressures the victim into purchasing a
-                    fraudulent application as protection, which is the actual
-                  </p>
-
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    Spyware
-                  </h3>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Installed on a victim’s device without their knowledge,
-                    spyware transmits personal details, communications and
-                    browsing behaviours to its user, who can monitor activities
-                    remotely.
-                  </p>
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    Adware
-                  </h3>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    These programs bombard users with unwanted ads that blink or
-                    block a particular action. They tend to be installed in
-                    return for something, like unpaid access to an online
-                    service.
-                  </p>
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    Fileless malware
-                  </h3>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    This code works within a computer’s memory instead of the
-                    hard drive. As it doesn’t depend on files and leaves no
-                    malicious trace, it can be difficult to identify and tackle.
-                  </p>
-
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Trojans
                   </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Trojans pose as safe applications, swindling unsuspecting
-                    users into downloading them. Once launched, they then can
-                    steal data, crash systems, spy on operations and more.
+                    Trojans disguise themselves as legitimate software but
+                    contain malicious code. Once installed, they grant
+                    unauthorized access to a system.
                   </p>
-
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    Ponzi scheme investigators with a proven track record
+                    Ransomware
                   </h3>
-                  <hr />
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Global leaders Mustang is renowned for its unparalleled
-                    ability to uncover evidence and crack down on ponzi schemes
-                    across the globe. Our highly-experienced investigators,
-                    researchers and analysts bring the truth to light with
-                    unrivalled skill.
-                    <br />
-                    <br />
-                    Proactive investigations
-                    <br />
-                    <br />
-                    We approach every ponzi scheme investigation with driven and
-                    dynamic solutions that evolve with each breakthrough. Our
-                    investigations draw upon direct access to local databases,
-                    expert witnesses in cyber fraud, and a network of
-                    confidential informants.
-                    <br />
-                    <br />
-                    Worldwide resources
-                    <br />
-                    <br />
-                    Mustang investigators leverage powerful relationships with
-                    state, federal and international law enforcement agencies
-                    around the world. We can also work closely with local and
-                    foreign correspondent lawyers to identify money trails and
-                    hidden assets in nearly any country.
-                    <br />
-                    <br />
-                    Actionable evidence
-                    <br />
-                    <br />
-                    Losing your hard-earned savings to an investment scam can be
-                    devastating. To help you take legal action against the
-                    fraudster and recover your losses, we will present a
-                    thorough brief of evidence for use in criminal proceedings
-                    within the appropriate jurisdiction.
-                    <br />
-                    <br />
-                    Guaranteed discretion
-                    <br />
-                    <br />
-                    Mustang performs every ponzi scheme investigation with total
-                    professionalism and sensitivity. You can rest assured that
-                    every piece of personal data is encrypted for your privacy.
-                    Case details remain confidential and will never be disclosed
-                    without your consent.
+                    Ransomware encrypts a device’s files, demanding payment
+                    (usually in cryptocurrency) for their release.
                   </p>
-
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    How do dating and romance scams work?{" "}
-                  </h3>
-                  <hr />
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Dating scams play on your emotions with the aim of
-                    persuading you to provide money, gifts or personal
-                    information. You may be approached on dating websites or via
-                    social media before the scammer works to move communications
-                    to more private and less regulated channels like text or
-                    email.
-                    <br />
-                    <br />
-                    Your ‘love interest’ will pursue a seemingly strong
-                    connection with you, despite plans to meet in person never
-                    materialising. Once they have secured your trust, they will
-                    ask you to send money for things like healthcare fees,
-                    travel costs or investment opportunities. In reality, they
-                    will either pocket these funds and/or use your bank account
-                    for further fraudulent activity.
-                    <br />
-                    <br />
-                    Often run by international crime syndicates, online dating
-                    scams can also pose a serious danger to your personal
-                    safety. You may be lured abroad and tangled up in perilous
-                    situations with devastating consequences. Don’t take the
-                    risk.
+                    If you suspect you’ve fallen victim to any of these types of
+                    malware, contact Mustang for comprehensive malware
+                    investigations.
                   </p>
-
-                  <CaseContact />
-
-                  <div className="items-center justify-between sm:flex">
-                    <div className="mb-5">
-                      <h4 className="mb-3 text-sm font-medium text-body-color">
-                        Popular Tags :
-                      </h4>
-                      <div className="flex items-center">
-                        <TagButton text="Scams" />
-                        <TagButton text="Recovery" />
-                        <TagButton text="Mustanggg" />
-                      </div>
-                    </div>
-                    <div className="mb-5">
-                      <h5 className="mb-3 text-sm font-medium text-body-color sm:text-right">
-                        Share this post :
-                      </h5>
-                      <div className="flex items-center sm:justify-end">
-                        <SharePost />
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <CaseContact />
     </>
   );
 };

@@ -38,7 +38,6 @@ const AboutSectionThree = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <p className="pb-8">
-                    {" "}
                     We deliver unparalleled services that stand as a beacon of
                     distinction in the market. Recognizing the constraints faced
                     by law enforcement agencies in precisely locating suspects
@@ -58,26 +57,25 @@ const AboutSectionThree = () => {
                     assets lost to fraud, the key lies in amassing a substantial
                     body of evidence capable of transforming investigative
                     results into actionable intelligence. In recognizing the
-                    distinct nature of each case, we eschew 'fit-all solutions,'
-                    acknowledging their inadequacy in delivering the desired
-                    outcome.
+                    distinct nature of each case, we eschew &apos;fit-all
+                    solutions,&apos; acknowledging their inadequacy in
+                    delivering the desired outcome.
                   </p>
                   <p className="pb-8">
-                    {" "}
                     IMUSTANG stands apart by offering clients a methodical
                     process – a well-defined sequence of actions that adhere to
                     a systematic and meticulous procedure. This approach, proven
-                    successful throughout Mustang Global's history, provides not
-                    only a framework but also the adaptability required for each
-                    unique situation, ensuring our clients receive tailored
-                    solutions attuned to their specific needs.
+                    successful throughout Mustang Global&apos;s history,
+                    provides not only a framework but also the adaptability
+                    required for each unique situation, ensuring our clients
+                    receive tailored solutions attuned to their specific needs.
                   </p>
 
                   <p className="pb-8 italic text-[#333] dark:text-[#fff]">
-                    " Global experts in cybercrime investigations and
+                    &quot; Global experts in cybercrime investigations and
                     cryptocurrency recovery. From internet scams to investment
                     fraud, trust us to uncover the truth and reclaim your
-                    assets. "
+                    assets. &quot;
                   </p>
                 </div>
               </div>
@@ -101,8 +99,8 @@ const AboutSectionThree = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center  gap-6 sm:flex-row lg:flex-row">
-          <div className="group relative w-full overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark lg:w-[500px] ">
+        <div className="flex flex-col items-center justify-center gap-6 sm:flex-row lg:flex-row">
+          <div className="group relative w-full overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark lg:w-[500px]">
             <a className="relative block aspect-[37/22] w-full">
               <img
                 src="/images/about/team-2.jpg"
@@ -112,8 +110,8 @@ const AboutSectionThree = () => {
             </a>
             <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8">
               <h3>
-                <a className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white  sm:text-2xl">
-                  John Watson <br />{" "}
+                <a className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white sm:text-2xl">
+                  John Watson <br />
                   <span className="text-[#Dc143c]">Executive Chairman</span>
                 </a>
               </h3>
@@ -139,8 +137,8 @@ const AboutSectionThree = () => {
             </a>
             <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8">
               <h3>
-                <a className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white  sm:text-2xl">
-                  Naomi Haruto <br />{" "}
+                <a className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white sm:text-2xl">
+                  Naomi Haruto <br />
                   <span className="text-[#Dc143c]">Special Advisor</span>
                 </a>
               </h3>

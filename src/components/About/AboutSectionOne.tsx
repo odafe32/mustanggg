@@ -36,7 +36,6 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <p className="pb-8">
-                    {" "}
                     Providing worldwide investigative services with a focus on
                     asset recovery, our team, formed after years with investment
                     and research firms, specializes in reclaiming funds from
@@ -47,12 +46,12 @@ const AboutSectionOne = () => {
                     offer intelligence and recovery services globally.
                   </p>
                   <p className="pb-8">
-                    {" "}
-                    If you've fallen victim to scams such as investment fraud,
-                    cryptocurrency schemes, or online forex trading fraud,
-                    Whether it’s an exchange hack, a fraudulent ICO, or a major
-                    Bitcoin theft, we provide actionable intelligence in such
-                    matters, with the aim of leading to funds recovery.
+                    If you&apos;ve fallen victim to scams such as investment
+                    fraud, cryptocurrency schemes, or online forex trading
+                    fraud, whether it&rsquo;s an exchange hack, a fraudulent
+                    ICO, or a major Bitcoin theft, we provide actionable
+                    intelligence in such matters, with the aim of leading to
+                    funds recovery.
                   </p>
                 </div>
               </div>
