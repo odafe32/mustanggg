@@ -38,7 +38,8 @@ const Hero = () => {
         muted
         playsInline
       >
-        <source src="https://files.fm/f/a7cked5b5q" type="video/mp4" />
+        <source src="/video/video_2.m4v" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
       {/* Overlay */}
       <div className="absolute inset-0 z-[-1] bg-black opacity-60"></div>
