@@ -11,7 +11,7 @@ const HeroSectionFour = () => {
   useEffect(() => {
     const texts = [
       "Get Infos You Need",
-      "Frequently Asked Questions",
+      "Contact",
       "Frequently Asked Questions",
     ];
     let index = 0;

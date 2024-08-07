@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Question Page | Mustanggg",
-  description: "This is About Page | FAQS",
+  description: "This is FAQS | FAQS",
   // other metadata
 };
 
@@ -16,44 +16,56 @@ const Faqs = () => {
         "Please email Contact@mustang.com with a paragraph or two summarizing what happened, focusing on the facts (not theory, not your own investigation, etc.) and, most importantly, include the blockchain transactions. Make sure the transaction data is in a copy and pasteable format (ideally plaintext or otherwise a csv file) — we can’t do a preliminary analysis, can’t advise if it’s a viable case for us to engage on, and can’t provide a retainer estimate or you can send us a message via whatsapp OR VIA LIVE CHAT",
     },
     {
-      question: "How does billing work?",
+      question: "What makes Mustang Global's services unique in the market?",
       answer:
-        "We offer a variety of billing options, including monthly and annual subscription plans, as well as pay-as-you-go pricing for certain services. Payment is typically made through a credit card or other secure online payment method.",
+        "Mustang Global distinguishes itself by providing unparalleled services that stand out in terms of quality and effectiveness. Our commitment to a culture of alertness and focus ensures that each case is handled with urgency and sensitivity.",
     },
     {
-      question: "Can I get a refund for my subscription?",
+      question:
+        "Can you recover my funds? What are the odds of recovering funds in my situation?",
       answer:
-        "We offer a 30-day money-back guarantee for most of its subscription plans. If you are not satisfied with your subscription within the first 30 days, you can request a full refund. Refunds for subscriptions that have been active for longer than 30 days may be considered on a case-by-case basis.",
+        "MUSTANG is an investigative agency, and a recovery agency. We investigate and produce intelligence. Typically, this information is then passed to law enforcement in your jurisdiction. This may or may not lead to recovery with the help of law enforcement (partial recovery is much more common than full recovery). We assess each case that meets our criteria (including the minimum loss threshold) individually, and offer an (honest) opinion of whether or not it may be worth pursuing and/or engaging us. In some cases, we will still advise against pursuing or decline to engage even if the minimum loss threshold is met if we don’t feel it’s in the best interest of a prospective client to hire us.",
     },
     {
-      question: "How do I cancel my subscription?",
+      question:
+        "How does Mustang Global assist law enforcement agencies in pinpointing suspects and their illegal operations?",
       answer:
-        "To cancel your We subscription, you can log in to your account and navigate to the subscription management page. From there, you should be able to cancel your subscription and stop future billing.",
+        "We support law enforcement agencies by overcoming restrictions through our expertise in Investigations, Intelligence, and Asset Recovery. Our proactive approach enables precise location identification and dismantling of illicit operations.",
     },
     {
-      question: "Can I try this platform for free?",
+      question:
+        "Do you charge upfront, or will you work for [contingency percent offered] only?",
       answer:
-        "We offer a free trial of its platform for a limited time. During the trial period, you will have access to a limited set of features and functionality, but you will not be charged.",
+        "We have more people willing to pay us upfront than we can service; it would not make business sense to take any case on a contingency-only basis. We already factor a modest contingency into our pricing.",
     },
     {
-      question: "How do I access documentation?",
+      question:
+        "A bunch of people I know got scammed as part of a large scam / rug pull / hack. Can you help?",
       answer:
-        "Documentation is available on the company's website and can be accessed by logging in to your account. The documentation provides detailed information on how to use the platform, as well as code examples and other resources.",
+        "We take clients on an individual or company basis — as in, we don’t do group or “pool” cases with a bunch of other purported victims you met on Telegram. If somebody -individually- lost $100K+, it may be a good mutual fit.",
     },
     {
-      question: "How do I contact support?",
+      question:
+        "A wallet of mine has been compromised and currently has funds that are 'locked' due to unstaking periods or vesting periods. I'm concerned the hacker may withdraw the funds from the wallet as soon as they become available to be transferred, and additionally may be concerned about the hacker using a 'flashbot' that would be able to access the funds faster than I could",
       answer:
-        "If you need help with the platform or have any other questions, you can contact the company's support team by submitting a support request through the website or by emailing support@We.com.",
+        "Depending on the amounts staked/locked, this is something we may be able to help out. CipherBlade does sometimes employ automated solutions or ‘bots’ as well in some cases, which have historically been able to out-compete other bots.",
     },
     {
-      question: "Do you offer any discounts or promotions?",
+      question: "What is the core focus of Mustang Global's expertise?",
       answer:
-        "We may offer discounts or promotions from time to time. To stay up-to-date on the latest deals and special offers, you can sign up for the company's newsletter or follow it on social media.",
+        "Mustang Global specializes in Investigations, Intelligence, and Asset Recovery, addressing a spectrum of challenges from shutting down illegal networks to recovering assets lost to fraud.",
     },
     {
-      question: "How do we compare to other similar services?",
+      question:
+        "How does Mustang Global approach understanding the internal structures of illicit groups?",
       answer:
-        "This platform is a highly reliable and feature-rich service that offers a wide range of tools and functionality. It is competitively priced and offers a variety of billing options to suit different needs and budgets.",
+        "In-depth investigative work is at the heart of our approach. Whether it's shutting down illegal peer networks or removing counterfeits, we emphasize building substantial evidence crucial for actionable intelligence.",
+    },
+    {
+      question:
+        "How does Mustang Global ensure adaptability to individual cases?",
+      answer:
+        " Mustang Global's approach is not a predetermined product but a methodical process. Each element is constantly adjusted to the specific situation, allowing for easy adaptability and ensuring tailored solutions for clients.",
     },
   ];
 
@@ -75,10 +87,10 @@ const Faqs = () => {
           theft, fraud, or scam): FAQS
         </h2>
 
-        <div className="mx-auto mt-[100px] h-full bg-white px-5">
+        <div className="mx-auto mt-[100px] h-full px-5 dark:bg-[#000]">
           <div className="flex flex-col items-center">
             <p
-              className="mt-3 text-xl text-neutral-500"
+              className="mt-3 text-xl text-neutral-500 dark:text-[#ccc]"
               style={{
                 letterSpacing: "3px",
               }}
@@ -91,7 +103,9 @@ const Faqs = () => {
               <div key={index} className="py-5">
                 <details className="group">
                   <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                    <span className="font-bold">{faq.question}</span>
+                    <span className="font-semibold dark:font-medium">
+                      {faq.question}
+                    </span>
                     <span className="transition group-open:rotate-180">
                       <svg
                         fill="none"
@@ -108,7 +122,7 @@ const Faqs = () => {
                       </svg>
                     </span>
                   </summary>
-                  <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
+                  <p className="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-[#ccc]">
                     {faq.answer}
                   </p>
                 </details>

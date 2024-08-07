@@ -42,6 +42,13 @@ const Header = () => {
 
   const usePathName = usePathname();
 
+  // Close the menu when a link is clicked
+  const handleLinkClick = () => {
+    if (navbarOpen) {
+      setNavbarOpen(false);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -165,6 +172,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
+                            onClick={handleLinkClick} // Close menu on link click
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-[#Dc143c] dark:text-white"
@@ -209,6 +217,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
+                                  onClick={handleLinkClick} // Close menu on link click
                                   className="block rounded py-2.5 text-sm text-[#000] hover:text-[#Dc143c] dark:text-white/70 dark:hover:text-white lg:px-3"
                                 >
                                   {submenuItem.title}

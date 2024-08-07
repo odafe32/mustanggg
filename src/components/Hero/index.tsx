@@ -1,6 +1,7 @@
 "use client"; // Add this directive to mark the component as a Client Component
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     const texts = [
       "Business Consulting",
-      "Assest Recovery",
+      "Asset Recovery",
       "Financial Crime Intelligence",
     ];
     let index = 0;
@@ -30,7 +31,7 @@ const Hero = () => {
       id="home"
       className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
     >
-      {/* <motion.div layout /> */}
+      {/* Video Background */}
       <video
         className="absolute inset-0 z-[-1] h-full w-full object-cover"
         autoPlay
@@ -47,23 +48,43 @@ const Hero = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="h-full w-full px-4 lg:h-[70vh]">
             <div className="mx-auto max-w-[800px] text-center">
-              <h1 className="mb-5 text-3xl font-bold leading-tight text-[#Dc143c] dark:text-[#dc143c] sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+              {/* Animated Title */}
+              <motion.h1
+                className="mb-5 text-3xl font-bold leading-tight text-[#Dc143c] dark:text-[#dc143c] sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"
+                key={text} // Ensure animation triggers on text change
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.5 }}
+              >
                 {text}
-              </h1>
-              <p
-                className="mb-12 font-serif text-[20px] !leading-relaxed  text-[#fff] dark:text-[#fff] sm:text-lg md:text-[28px]"
+              </motion.h1>
+
+              {/* Animated Description */}
+              <motion.p
+                className="mb-12 font-serif text-[20px] !leading-relaxed text-[#fff] dark:text-[#fff] sm:text-lg md:text-[28px]"
                 style={{
                   fontStyle: "italic",
                 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               >
                 Global leaders in cybercrime investigations and cryptocurrency
                 recovery. Whether it&apos;s internet scams or investment fraud,
                 rely on us to reveal the truth and recover your assets.
-              </p>
-              <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+              </motion.p>
+
+              {/* Animated Button */}
+              <motion.div
+                className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
                 <Link
                   href="#about"
-                  className=" bg-transparent  font-bold text-white duration-300 ease-in-out hover:bg-transparent"
+                  className="bg-transparent font-bold text-white duration-300 ease-in-out hover:bg-transparent"
                   style={{
                     border: "1px solid #fff",
                     padding: "8px 38px",
@@ -71,27 +92,37 @@ const Hero = () => {
                     marginTop: "20px",
                   }}
                 >
-                  <svg
+                  <motion.svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
                     className="size-6"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
                   >
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
                     />
-                  </svg>
+                  </motion.svg>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+
+      {/* Animated Background Elements */}
+      <motion.div
+        className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <svg
           width="450"
           height="556"
@@ -195,8 +226,14 @@ const Hero = () => {
             </linearGradient>
           </defs>
         </svg>
-      </div>
-      <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
         <svg
           width="364"
           height="201"
@@ -282,7 +319,7 @@ const Hero = () => {
             </linearGradient>
           </defs>
         </svg>
-      </div>
+      </motion.div>
     </section>
   );
 };
