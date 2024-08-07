@@ -38,7 +38,7 @@ const Hero = () => {
         muted
         playsInline
       >
-        <source src="/video/video_2.mp4" type="video/mp4" />
+        <source src="Video2.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
