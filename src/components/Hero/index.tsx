@@ -31,15 +31,16 @@ const Hero = () => {
       className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
     >
       {/* <motion.div layout /> */}
-      <video
-        className="absolute inset-0 z-[-1] h-full w-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/video/video_2.mp4" type="video/mp4" />
-      </video>
+  <iframe
+  className="absolute inset-0 z-[-1] h-full w-full object-cover"
+  src="https://www.youtube.com/embed/adp0c1m00Z8?autoplay=1&loop=1&playlist=adp0c1m00Z8&modestbranding=1&controls=0&showinfo=0&mute=1"
+  title="In July | Got 35ETH’s Garnered through the Use of an AIBot with ChatGPT"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
+
       {/* Overlay */}
       <div className="absolute inset-0 z-[-1] bg-black opacity-60"></div>
       <div className="container relative z-10">
