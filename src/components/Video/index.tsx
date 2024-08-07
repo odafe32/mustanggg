@@ -19,7 +19,7 @@ const Video = () => {
               &quot;I engaged MUSTANG&apos;s services to recover my AUD $700,000
               investment lost in a boiler room share market scam. MUSTANG
               efficiently traced the fraudsters linked to my investment and
-              facilitated their arrest in Ghana. Subsequently, we successfully
+              facilitated their arrest in Moroco. Subsequently, we successfully
               froze their assets and reached a financial settlement, ultimately
               leading to the full recovery of my invested funds and related
               expenses. This experience was transformative, allowing me to

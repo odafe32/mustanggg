@@ -222,6 +222,22 @@ const Header = () => {
                   </ul>
                 </motion.nav>
               </div>
+              <Link
+                className="flex items-center justify-end"
+                href="https://www.facebook.com/profile.php?id=61563112247554"
+                target="blank"
+              >
+                <img
+                  className="block w-[20px] dark:hidden"
+                  src="/images/logo/facebookLight.svg"
+                  alt="logo"
+                />
+                <img
+                  className="hidden w-[20px] dark:block"
+                  src="/images/logo/facebookDark.svg"
+                  alt="logo"
+                />
+              </Link>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <a
                   href="/signup"
