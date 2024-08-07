@@ -1,11 +1,27 @@
 "use client"; // Add this directive to mark the component as a Client Component
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
+
+// Define MyComponent with animation
+const MyComponent = ({ isVisible }) => (
+  <AnimatePresence>
+    {isVisible && (
+      <motion.div
+        key="modal"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50"
+      ></motion.div>
+    )}
+  </AnimatePresence>
+);
 
 const Hero = () => {
   const [text, setText] = useState("Business Consulting");
+  const [isVisible, setIsVisible] = useState(true); // State to control MyComponent visibility
 
   useEffect(() => {
     const texts = [
@@ -204,21 +220,21 @@ const Hero = () => {
             </linearGradient>
             <linearGradient
               id="paint5_linear_25:217"
-              x1="356"
-              y1="110"
-              x2="356"
-              y2="470"
+              x1="195.99"
+              y1="58.519"
+              x2="397.184"
+              y2="316.546"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint6_linear_25:217"
-              x1="118.524"
-              y1="29.2497"
-              x2="166.965"
-              y2="338.63"
+              x1="14.792"
+              y1="155.418"
+              x2="224.52"
+              y2="448.428"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#4A6CF7" />
@@ -228,98 +244,8 @@ const Hero = () => {
         </svg>
       </motion.div>
 
-      <motion.div
-        className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-        <svg
-          width="364"
-          height="201"
-          viewBox="0 0 364 201"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5.88928 72.3303C33.6599 66.4798 101.397 64.9086 150.178 105.427C211.155 156.076 229.59 162.093 264.333 166.607C299.076 171.12 337.718 183.657 362.889 212.24"
-            stroke="url(#paint0_linear_25:218)"
-          />
-          <path
-            d="M22.8893 72.3303C50.6599 66.4798 118.397 64.9086 167.178 105.427C228.155 156.076 246.59 162.093 281.333 166.607C316.076 171.12 354.718 183.657 379.889 212.24"
-            stroke="url(#paint1_linear_25:218)"
-          />
-          <path
-            d="M5.88928 72.3303C33.6599 66.4798 101.397 64.9086 150.178 105.427C211.155 156.076 229.59 162.093 264.333 166.607C299.076 171.12 337.718 183.657 362.889 212.24"
-            stroke="url(#paint2_linear_25:218)"
-          />
-          <path
-            d="M22.8893 72.3303C50.6599 66.4798 118.397 64.9086 167.178 105.427C228.155 156.076 246.59 162.093 281.333 166.607C316.076 171.12 354.718 183.657 379.889 212.24"
-            stroke="url(#paint3_linear_25:218)"
-          />
-          <path
-            d="M18.4118 112.024C47.7925 101.317 122.975 91.1183 180.825 136.04C252.778 193.241 276.089 200.075 316.166 205.448C356.242 210.822 401.702 218.929 430.697 252.913"
-            stroke="url(#paint4_linear_25:218)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_25:218"
-              x1="5.88867"
-              y1="72.3303"
-              x2="362.889"
-              y2="212.24"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_25:218"
-              x1="22.8887"
-              y1="72.3303"
-              x2="379.889"
-              y2="212.24"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint2_linear_25:218"
-              x1="5.88867"
-              y1="72.3303"
-              x2="362.889"
-              y2="212.24"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint3_linear_25:218"
-              x1="22.8887"
-              y1="72.3303"
-              x2="379.889"
-              y2="212.24"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint4_linear_25:218"
-              x1="18.4113"
-              y1="112.024"
-              x2="430.697"
-              y2="252.913"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </motion.div>
+      {/* MyComponent with animation */}
+      <MyComponent isVisible={isVisible} />
     </section>
   );
 };

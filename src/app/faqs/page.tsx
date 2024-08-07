@@ -72,7 +72,12 @@ const Faqs = () => {
   return (
     <>
       <HeroSectionFour />
-      <div className="container h-full p-20">
+      <div
+        className="container h-full p-2  lg:p-20"
+        style={{
+          paddingTop: "30px",
+        }}
+      >
         <h5
           className="font-bold text-[#Dc143c]"
           style={{
@@ -82,7 +87,7 @@ const Faqs = () => {
         >
           FREQUENTLY ASKED QUESTIONS FOR:
         </h5>
-        <h2 className="pt-6 font-serif text-[40px]">
+        <h2 className="pt-6 font-serif text-[24px]  lg:text-[40px]">
           Incident Response cases where there’s a financial loss (e.g. hack,
           theft, fraud, or scam): FAQS
         </h2>
@@ -98,7 +103,7 @@ const Faqs = () => {
               Frequently asked questions
             </p>
           </div>
-          <div className="mx-auto mt-8 grid max-w-[60rem] divide-y divide-neutral-200">
+          <div className="mx-auto mt-8 grid max-w-full  divide-y divide-neutral-200 lg:max-w-[60rem]">
             {faqs.map((faq, index) => (
               <div key={index} className="py-5">
                 <details className="group">
