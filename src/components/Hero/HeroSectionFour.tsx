@@ -55,7 +55,10 @@ const HeroSectionFour = () => {
                 style={{
                   fontStyle: "italic",
                 }}
-              ></p>
+              >
+                Mustang Global distinguishes itself by providing unparalleled
+                services that stand out in terms of quality and effectiveness.
+              </p>
             </div>
           </div>
         </div>
