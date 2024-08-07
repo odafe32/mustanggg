@@ -40,6 +40,7 @@ const Hero = () => {
       >
         <source src="/video/video_2.mp4" type="video/mp4" />
       </video>
+
       {/* Overlay */}
       <div className="absolute inset-0 z-[-1] bg-black opacity-60"></div>
       <div className="container relative z-10">
